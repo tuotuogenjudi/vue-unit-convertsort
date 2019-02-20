@@ -1,7 +1,7 @@
 {
   "name": "vue-unit-convertsort",
   "description": "存储单位的转换和排序",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "zuorui <zuorui@mochasoft.com.cn>",
   "license": "MIT",
   "private": false,

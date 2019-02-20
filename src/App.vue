@@ -5,7 +5,7 @@
     <!-- <h2>Essential Links</h2> -->
     <ul>
       <li>
-        <div>转换为最小单位B</div>
+        <div class="title">转换为最小单位B</div>
         <div>20G: {{ test }}B</div>
       </li>
       <li>
@@ -13,7 +13,7 @@
         <div>20M: {{ testM }}B</div>
       </li>
       <li>
-        <div>默认2位小数</div>
+        <div>转换为最大单位默认2位小数</div>
         <div>20474736330B: {{ testBTo1 }}</div>
       </li>
       <li>
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import storageUnit from '../src/lib/index';
+import storageUnit from '../convertsort';
 export default {
   name: 'app',
   data () {
@@ -75,7 +75,7 @@ export default {
     this.test = storageUnit.convertToB('20GB');
     this.testM = storageUnit.convertToB('20MB');
     this.testBTo1 = storageUnit.convertBTo('20474736330').numUnit;
-    this.testBTo2 = storageUnit.convertBTo('20474736330', 3, 'MB').numUnit;
+    this.testBTo2 = storageUnit.convertBTo('20474736330', 4, 'MB').numUnit;
   },
   methods: {
     customSort(...para) {
